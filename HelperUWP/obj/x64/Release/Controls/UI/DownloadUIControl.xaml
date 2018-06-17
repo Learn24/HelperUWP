@@ -1,0 +1,37 @@
+﻿<UserControl
+    x:Class="HelperUWP.Controls.UI.DownloadUIControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelperUWP.Controls.UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid>
+       
+        <StackPanel Margin="5,5,5,5" Background="#FFD1D0D0">
+            <Button x:ConnectionId='1' Background="Transparent" x:Name="CloseButton" HorizontalAlignment="Right" VerticalAlignment="Top"
+                                           Margin="0,0,0,0" Height="25" 
+                 FontWeight="Bold" FontSize="9" Content="Close" 
+                    Foreground="{StaticResource SystemControlBackgroundAccentBrush}" 
+                    BorderBrush="Transparent"></Button>
+            <TextBlock x:ConnectionId='2' Margin="5,0,5,0" TextWrapping="NoWrap"  Text="" x:Name="FileNameTitle" 
+                       FontFamily="Segoe UI Black">
+            </TextBlock>
+            <TextBlock x:ConnectionId='3' Text="" Margin="5,0,5,0" Visibility="Collapsed" Foreground="#FFD8C4C4" x:Name="SourceText"></TextBlock>
+            <Grid>
+                <ProgressBar x:ConnectionId='6' Background="#FF5A5B5A" x:Name="progressbar" Height="16" 
+                             Foreground="{StaticResource SystemControlBackgroundAccentBrush}"  Value="0" Maximum="100"></ProgressBar>
+                <TextBlock x:ConnectionId='7' VerticalAlignment="Center" Foreground="White" FontSize="10" HorizontalAlignment="Center" 
+                           Text="0%"  x:Name="PercentageText"></TextBlock>
+            </Grid>
+            <TextBlock x:ConnectionId='4' Margin="5,0,5,0" FontSize="10" Text="Waiting..."  x:Name="StatText"></TextBlock>
+            <Button x:ConnectionId='5' Background="Transparent" x:Name="CancelButton"                            Margin="0,0,0,0" Height="25" FontWeight="Bold" FontSize="9" Content="Cancel" 
+                    Foreground="{StaticResource SystemControlBackgroundAccentBrush}" 
+                    BorderBrush="Transparent"></Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
+

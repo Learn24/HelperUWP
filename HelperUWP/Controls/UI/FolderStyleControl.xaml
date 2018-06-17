@@ -1,0 +1,67 @@
+﻿<UserControl
+    x:Class="HelperUWP.Controls.UI.FolderStyleControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelperUWP.Controls.UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid x:Name="GridCons"  HorizontalAlignment="Left" Margin="1,1,0,0" Width="120" Height="190">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="GridCons.Width" Value="120"></Setter>
+                        <Setter Target="GridCons.Height" Value="190"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="GridCons.Width" Value="150"></Setter>
+                        <Setter Target="GridCons.Height" Value="240"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Grid x:Name="GridTop" Background="#FF222123"  Grid.Row="0">
+            <Image Name="IconNull" Width="60" Height="60"  Stretch="Fill"  />
+            <Image Name="ImageThumbnail"  />
+
+        </Grid>
+        <Grid x:Name="GridBelow" Background="#FF463F3F"   Grid.Row="1">
+            <Grid x:Name="GridAbove" VerticalAlignment="Top" Height="50" >
+                <TextBlock Foreground="White" Height="45" Margin="2,2,32,2"
+                       Name="TitleText" Text="Title"
+                       VerticalAlignment="Top"
+                       FontSize="15" 
+                       TextWrapping="Wrap" />
+                <Image Width="30" Name="IconNullSmall" Height="30" Stretch="Fill" Margin="2,2,2,2" HorizontalAlignment="Right" ></Image>
+            </Grid>
+            <StackPanel Margin="2,2,2,5" VerticalAlignment="Bottom" x:Name="TextPanelCount" Orientation="Horizontal">
+                <TextBlock Foreground="White" x:Name="ItemText" FontSize="12" Text=""                        
+                       TextWrapping="Wrap" />
+                <TextBlock Foreground="White" x:Name="ItemCountText" Text="0" Margin="1,0,0,0"                        
+                       FontSize="12" />
+            </StackPanel>
+        </Grid>
+        <Button VerticalAlignment="Bottom" Visibility="Collapsed"
+                Foreground="White" Grid.Row="0" HorizontalAlignment="Right"  
+                Background="Transparent" x:Name="EditButton" Click="EditButton_Click" 
+                FontSize="10"  Content="&#xE104;"    FontFamily="Segoe MDL2 Assets"></Button>
+    </Grid>
+</UserControl>

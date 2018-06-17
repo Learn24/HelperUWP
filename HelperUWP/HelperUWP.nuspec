@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>HelperUWP</id>
+    <version>1.0.5</version>
+    <authors>Cloud24</authors>
+    <owners>Cloud24</owners>
+    <licenseUrl>https://github.com/Learn24/HelperUWP</licenseUrl>
+    <projectUrl>https://github.com/Learn24/HelperUWP</projectUrl>
+    <iconUrl>https://image.flaticon.com/icons/png/128/188/188333.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Just simple helpers for UWP</description>
+    <releaseNotes>Just simple helpers for UWP</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Uwp Windows</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="9.0.1" />
+      <dependency id="Coding4Fun.Toolkit.Controls" version="2.1.8" />
+      <dependency id="Microsoft.Net.Http" version="2.2.29" />
+      <dependency id="Microsoft.NETCore.UniversalWindowsPlatform" version="6.0.5" />
+      <dependency id="SQLite.Net-PCL" version="3.1.1" />
+      <dependency id="WindowsAppStudio.DataProviders" version="1.5.1" />  
+    </dependencies>
+  </metadata>
+</package>

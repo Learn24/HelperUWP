@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<CurrentApp>
+  <ListingInformation>
+    <App>
+      <AppId>988b90e4-5d4d-4dea-99d0-e423e414ffbc</AppId>
+      <LinkUri>http://apps.microsoft.com/webpdp/app/988b90e4-5d4d-4dea-99d0-e423e414ffbc</LinkUri>
+      <CurrentMarket>en-us</CurrentMarket>
+      <AgeRating>3</AgeRating>
+      <MarketData xml:lang="en-us">
+        <Name>In-app purchases</Name>
+        <Description>AppDescription</Description>
+        <Price>5.99</Price>
+        <CurrencySymbol>$</CurrencySymbol>
+        <CurrencyCode>USD</CurrencyCode>
+      </MarketData>
+    </App>
+    <Product ProductId="Backgrounds">
+      <MarketData xml:lang="en-us">
+        <Name>Backgrounds</Name>
+        <Price>2.99</Price>
+        <CurrencySymbol>$</CurrencySymbol>
+        <CurrencyCode>USD</CurrencyCode>
+      </MarketData>
+    </Product>
+  </ListingInformation>
+  <LicenseInformation>
+    <App>
+      <IsActive>true</IsActive>
+      <IsTrial>false</IsTrial>
+    </App>
+    <Product ProductId="Backgrounds">
+      <IsActive>false</IsActive>
+    </Product>
+  </LicenseInformation>
+
+</CurrentApp>
